@@ -23,7 +23,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('models/train_clean.csv', parse_dates=['Date'])
+    df = pd.read_csv('models/train_dashboard.csv', parse_dates=['Date'])
     return df
 
 model, FEATURES, metrics = load_model()
